@@ -1,7 +1,7 @@
 import pandas as pd
 
 # Load sample dataset
-df = pd.read_csv("sample_card_transdata.xlsx")
+df = pd.read_excel("sample_card_transdata.xlsx")
 
 # Test 1: Check for missing values
 assert df.isnull().sum().sum() == 0, "Dataset contains missing values."
